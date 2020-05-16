@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title> Hasil Project Kelompok 2 </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="assets/logo.png"></a>
+		<!-- <div class="toggle"><img src="assets/toggle.png"></div> -->
+	</header>
+	<div class="banner">
+		<div class="content">
+			<h2>Pembangkit Listrik Tenaga <span>Magnet</span></h2>
+			<p>Pembangkit listrik tenaga magnet adalah sebuah alternatif untuk menghasilkan sebuah energi listrik. Di dalam project ini, kami membuatnya menggunakan Fan CPU sebagai mediator penggeraknya.</p>
+			<a href="#" class="play" onclick="toggle();"><img src="assets/play.png">Tonton Hasil Project</a>
+			<div class="slide"></div>
+		</div>
+	</div>
+	<div class="trailer">
+		<video src="trailer.mp4" controls="true"></video>
+		<img src="assets/close.png" class="close" onclick="toggle();">
+	</div>
+
+<section class="services">
+	<div class="container">
+		<div class="services-title">
+			<div class="title">
+				<h2>Keuntungannya</h2>
+			</div>
+		</div>
+
+		<div class="services-box">
+			<div class="box">
+				<div class="ser-box">
+					<div class="icon">
+						<img src="assets/ramah.png">
+					</div>
+					<h4>Ramah Lingkungan</h4>
+					<p>Produk ini tidak menghasilkan emisi ataupun polusi udara</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="ser-box">
+					<div class="icon">
+						<img src="assets/hemat.png">
+					</div>
+					<h4>Hemat Biaya</h4>
+					<p>Biaya yang digunakan dalam membuatnya relatif murah</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="ser-box">
+					<div class="icon">
+						<img src="assets/mudah.png">
+					</div>
+					<h4>Pembuatannya Mudah</h4>
+					<p>Pembuatannya yang mudah dan rangkaiannya sederhana</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="team">
+	<div class="contain">
+		<div class="team-title">
+			<div class="tit">
+				<h2>tim kami</h2>
+			</div>
+		</div>
+
+		<div class="team-boxes">
+			<div class="boxes">
+				<div class="te-boxes">
+					<div class="icon">
+						<img src="assets/profile.jpg">
+					</div>
+					<h4>Karimuddin Hakim Hasibuan<br><span>4192550004</span></h4>
+					<p>Mengeksekusi ide rancangan rangkaian dan web menjadi bentuk nyata</p>
+				</div>
+			</div>
+			<div class="boxes">
+				<div class="te-boxes">
+					<div class="icon">
+						<img src="assets/profile2.jpg">
+					</div>
+					<h4>Anti Nada Nafisa<br><span>4193250007</span></h4>
+					<p>Menyusun proposal laporan hasil project dan memberikan ide mengenai pembuatan web ini sebagai tempat pameran hasil project</p>
+				</div>
+			</div>
+			<div class="boxes">
+				<div class="te-boxes">
+					<div class="icon">
+						<img src="assets/profile3.jpg">
+					</div>
+					<h4>Nurul Adawiyah Putri<br><span>4193250006</span></h4>
+					<p>Menyusun proposal laporan hasil project dan memberikan ide mengenai rancangan project yang akan dibuat</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2>Tentang Project</h2>
+				<div class="content">
+					<p>Kami membuat Pembangkit Listrik Tenaga Magnet menggunakan Fan CPU sebagai Project yang dibuat untuk memenuhi kewajiban tugas dari matakuliah Organisasi dan Arsitek Komputer. Tujuan web ini dibuat adalah untuk mempresentasikan atau menampilkan hasil project yang sudah dikerjakan.</p>
+					<div class="social">
+						<a href="facebook.com/UnimedOfficial"><span class="fab fa-facebook-f"></span></a>
+						<a href="twitter.com/UnimedOfficial"><span class="fab fa-twitter"></span></a>
+						<a href="instagram.com/UnimedOfficial"><span class="fab fa-instagram"></span></a>
+						<a href="youtube.com/UnimedOfficial"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Info Universitas</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Medan, Indonesia</span>
+					</div><div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">(061) 6613365</span>
+					</div><div class="email">
+						<span class="fas fa-globe"></span>
+						<a href="https://www.unimed.ac.id/"><span class="text">www.unimed.ac.id</span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="right box">
+				<div class="unimed">
+					<img src="assets/unimed.png">
+					<a href="https://www.unimed.ac.id/"><h4>UNIVERSITAS NEGERI MEDAN</h4></a>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created By <a href="#">Team 2</a> | </span>
+				<span class="far fa-copyright"></span><span> 2020 All Right Reserved</span>
+			</center>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		function toggle(){
+			var trailer = document.querySelector('.trailer');
+			var video = document.querySelector('video');
+			trailer.classList.toggle('active');
+			video.currentTime = 0;
+			video.pause();
+		}
+	</script>
+</body>
+</html>
