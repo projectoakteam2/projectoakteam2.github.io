@@ -627,6 +627,11 @@ footer{
 	text-decoration: underline;
 }
 
+
+/*Responsive*/
+
+/*---header*/
+
 @media (max-width: 991px)
 {
 	header
@@ -672,5 +677,150 @@ footer{
 	{
 		max-width: 90%;
 		outline: none;
+	}
+}
+
+/*service section*/
+
+@media (min-width: 768px)
+{
+	.box
+	{
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+}
+
+@media (min-width: 600px)
+{
+	.box
+	{
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.box
+	{
+		flex: 0 0 33.333333% !important;
+		max-width: 33.333333% !important;
+	}
+}
+
+@media (min-width: 414px)
+{
+	.box
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+}
+
+@media (min-width: 370px)
+{
+	.box
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+}
+
+@media (min-width: 340px)
+{
+	.box
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+
+}
+
+@media (min-width: 320px)
+{
+	.box
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+	/*.ser-box .icon{
+		transform: translateY(-80%);
+		text-align: center;
+		border-radius: 40%;
+		border: 5px solid steelblue;
+		margin: 60px;
+	}*/
+}
+
+/*team section*/
+
+@media (min-width: 768px)
+{
+	.boxes
+	{
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+}
+
+@media (min-width: 600px)
+{
+	.boxes
+	{
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+}
+
+@media (min-width: 992px)
+{
+	.boxes
+	{
+		flex: 0 0 33.333333% !important;
+		max-width: 33.333333% !important;
+	}
+}
+
+@media (min-width: 414px)
+{
+	.boxes
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+}
+
+@media (min-width: 370px)
+{
+	.boxes
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+}
+
+@media (min-width: 320px)
+{
+	.boxes
+	{
+		flex: 0 0 100% ;
+		max-width: 100% ;
+	}
+}
+
+/*footer section*/
+
+@media screen and (max-width: 900px){
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+	.main-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box{
+		margin: 5px 0;
 	}
 }
